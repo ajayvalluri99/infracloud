@@ -2,10 +2,10 @@
 2024/11/18 12:25:48 error while reading the file "/csvserver/inputdata": open /csvserver/inputdata: no such file or directory
 
 2. echo "1,2,3" > inputdata
-	 # $(pwd)/inputdata refers to the full path of the inputdata file in my current directory.
+    $(pwd)/inputdata refers to the full path of the inputdata file in my current directory.
 
-$ docker run -v $(pwd)/inputdata:/csvserver/inputdata infracloudio/csvserver:latest
-  2024/11/18 12:30:20 listening on ****
+   $ docker run -v $(pwd)/inputdata:/csvserver/inputdata infracloudio/csvserver:latest
+   2024/11/18 12:30:20 listening on ****
 
 3. $ ./gencsv.sh 2 8
 File 'inputFile' generated successfully with 7 entries.
